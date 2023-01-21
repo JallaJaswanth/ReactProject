@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  background: var(--bg);
+  transition: all 3ms ease;
+  color: var(--black);
+  scroll-behavior: smooth;
+}

@@ -1,0 +1,62 @@
+.SliderContainer {
+  position: relative;
+}
+.SliderContainer .swiper {
+  width: 70%;
+  height: 12rem;
+  position: unset;
+}
+.SliderContainer .swiper-slide {
+  background: white;
+  overflow: hidden;
+  border-radius: 20px;
+  display: flex;
+  box-sizing: border-box;
+  padding: 1rem;
+  position: relative;
+}
+.SliderContainer .swiper-button-next {
+  right: 6rem;
+  color: black;
+}
+.SliderContainer .swiper-button-prev {
+  left: 6rem;
+  color: black;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.names {
+  display: flex;
+  flex-direction: column;
+}
+.names > :nth-child(1) {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.names > :nth-child(2) {
+  font-size: 0.8rem;
+}
+.left > :nth-child(2) {
+  font-weight: bold;
+  font-size: 2rem;
+}
+.left > :nth-child(3) {
+  font-size: 0.6rem;
+  border: 1px solid var(--black);
+  padding: 5px 10px;
+  width: max-content;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.imageSlider {
+  transform: rotate(-25deg);
+  position: absolute;
+  right: 0;
+  width: 25%;
+  height: 100%;
+  bottom: -20%;
+}

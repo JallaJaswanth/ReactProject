@@ -1,0 +1,64 @@
+.pContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+  gap: 2rem;
+  position: relative;
+}
+.pContainer > :nth-child(1) {
+  position: absolute;
+  width: 8rem;
+  left: 30%;
+  top: -3rem;
+}
+.products {
+  display: grid;
+  grid-template-columns: 25% auto;
+  width: 90%;
+}
+.pMenu {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-weight: 500;
+  font-size: 1.3rem;
+}
+.pMenu > li:hover {
+  color: var(--pink);
+  cursor: pointer;
+}
+.list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  height: 25rem;
+  overflow-y: scroll;
+  grid-gap: 2rem;
+  justify-content: space-between;
+}
+.product {
+  display: flex;
+  width: 12rem;
+  height: 8rem;
+  background-color: white;
+  position: relative;
+  padding: 1rem;
+  overflow: hidden;
+  gap: 2rem;
+  border-radius: 15px;
+}
+.product > img {
+  top: 3rem;
+  width: 6rem;
+  height: 11rem;
+}
+.productImage {
+  transform: rotate(-25deg);
+  position: absolute;
+  right: 0;
+  width: 40%;
+  height: 100%;
+  bottom: -20%;
+}

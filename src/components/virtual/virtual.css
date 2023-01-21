@@ -1,0 +1,37 @@
+.virtual {
+  display: flex;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  padding: 2rem;
+  justify-content: space-around;
+}
+.vLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  position: relative;
+}
+.vLeft > :nth-child(1) {
+  font-weight: bold;
+  font-size: 2rem;
+  text-transform: uppercase;
+  display: block;
+}
+.vLeft > :nth-child(2) {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  display: block;
+  width: 20rem;
+}
+.vLeft > :nth-child(3) {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.vLeft > img {
+  position: absolute;
+  width: 10rem;
+  bottom: 5rem;
+}
+.vWrapper {
+  width: 30rem;
+}
